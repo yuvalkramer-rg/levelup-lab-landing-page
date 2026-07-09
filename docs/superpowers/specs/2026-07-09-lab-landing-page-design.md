@@ -13,7 +13,7 @@ style.css         minimal styling
 app.js            fetches ideas.txt, parses it, renders the list
 ideas.txt         content: ideas as blank-line-separated paragraphs
 files/            downloadable files referenced from ideas.txt
-UPLOADING.md      instructions for content uploader (non-technical)
+README.md         instructions for content uploader (non-technical)
 .nojekyll
 ```
 
