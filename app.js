@@ -1,4 +1,4 @@
-import { parseLine } from './parse.js';
+import { splitParagraphs, parseParagraph } from './parse.js';
 
 async function main() {
   const list = document.getElementById('ideas');
@@ -6,10 +6,10 @@ async function main() {
   try {
     const res = await fetch('ideas.txt');
     if (!res.ok) throw new Error('fetch failed');
-    const lines = (await res.text()).split('\n').map((l) => l.trim()).filter(Boolean);
-    if (lines.length === 0) throw new Error('empty');
-    for (const line of lines) {
-      const idea = parseLine(line);
+    const paragraphs = splitParagraphs(await res.text());
+    if (paragraphs.length === 0) throw new Error('empty');
+    for (const paragraph of paragraphs) {
+      const idea = parseParagraph(paragraph);
       const li = document.createElement('li');
       li.append(idea.text);
       if (idea.url) {

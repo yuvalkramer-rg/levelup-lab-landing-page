@@ -1,3 +1,7 @@
 Clone a 500GB database in under a minute
+
 Try schema drift detection [sample project](files/drift-demo.txt)
-Anonymize a production dataset with one command
+
+Anonymize a production dataset with one command. This can be a longer
+paragraph if you need more than one line to explain the idea — line
+breaks within a paragraph are just joined together.

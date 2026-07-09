@@ -7,13 +7,19 @@ Changes go live automatically (usually within a minute of saving).
 
 1. Open [`ideas.txt`](ideas.txt) in this repo.
 2. Click the pencil ("Edit this file") icon, top right of the file view.
-3. Each line is one idea. Add, remove, or edit lines freely. Blank lines are ignored.
-4. To attach a download to an idea, add this to the end of the line:
+3. Each idea is a paragraph, separated from the next by a **blank line**.
+   An idea can be one line or several — line breaks inside a paragraph
+   are just joined together, so it's safe to write a longer idea as a
+   wrapped paragraph.
+4. To attach a download to an idea, add this to the end of its paragraph:
    `[label text](files/your-file-name)`
 
    Example:
    ```
    Try schema drift detection [sample project](files/drift-demo.zip)
+
+   Anonymize a production dataset with one command. This can be a longer
+   paragraph if you need more than one line to explain the idea.
    ```
    "sample project" is what shows as the clickable link text; `files/drift-demo.zip`
    must exactly match a file you've uploaded to the `files/` folder (see below).
