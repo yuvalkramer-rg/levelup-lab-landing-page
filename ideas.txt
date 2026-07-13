@@ -5,3 +5,5 @@ Try schema drift detection [sample project](files/drift-demo.txt)
 Anonymize a production dataset with one command. This can be a longer
 paragraph if you need more than one line to explain the idea — line
 breaks within a paragraph are just joined together.
+
+Improve the Redgate rota app (rota.red-gate.com)! It's used for 30+ rotas across Redgate. Have a go at making it better! If you come up with something good, make a PR and we'll review it. Here's how to start [Redgate rota app ideas (Word doc)](files/redgate-rota-ideas.docx)
