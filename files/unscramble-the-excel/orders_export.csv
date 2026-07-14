@@ -1,0 +1,29 @@
+Q2 Orders export - dont edit headers pls
+
+ Order ID,Customer,date,Product ,QTY,Unit price,Total ,region,Notes
+1001;Dave Chen;12/03/2024;Widget A;5;1,200.00;6,000.00;north;
+1002;sarah o'neill;13/03/2024;Widget B;2;450,00;900,00;South;
+1003;Mark Ibrahim;March 14 2024;Widget A;;1.200,00;;NORTH ;qty missing - check with Mark
+1004;Priya Patel, Jr.;2024-03-14;Widget C;10;75.00;750.00;east;
+1002;sarah o'neill;13/03/2024;Widget B;2;450,00;900,00;South;duplicate of above?
+1005,J. Kowalski,15/03/2024,Widget B,3 units,450.00,1350.00,West,
+;;;Subtotal North;;;6,000.00;;
+1006;Dave Chen;16/03/2024;Widget A;4;1.200,00;4.800,00;north;
+1007;Fatima Al-Sayed;17-03-2024;Widget D;1;2.300,00;2.300,00;east;
+1008,Tom O'Brien,18/03/2024,Widget C,6,75.00,450.00,East,
+1009;Dave Chen;19/03/2024;Widget A;2;1,200.00;2,400.00;North;
+1010;sarah o'neill;20/03/2024;Widget B;five;450,00;;south;qty as words and total left blank
+;;;Subtotal South;;;900,00;;
+1011;Priya Patel;21/03/2024;Widget C;3;75.00;225.00;east;
+1012,J. Kowalski,22/03/2024,Widget B,5,450,00,2.250,00,west,
+1013;Mark Ibrahim;23/03/2024;Widget A;1;1,200.00;1,200.00;North;
+1014;Fatima Al-Sayed;24/03/2024;Widget D;2;2.300,00;4.600,00;East ;
+1015;Tom O'Brien;25/03/2024;Widget C;;75.00;;east;missing qty, ask Tom
+1016;sarah o'neill;26/03/2024;Widget B;1;450,00;(450,00);South;refund - customer returned item
+
+=SUM(G4:G21)
+
+Returns log (pasted by Jane 26/03)
+Order,Reason,Refund
+1016,wrong item,450,00
+1010,never delivered,0

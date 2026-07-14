@@ -1,9 +1,23 @@
-Clone a 500GB database in under a minute
-
-Try schema drift detection [sample project](files/drift-demo.txt)
-
-Anonymize a production dataset with one command. This can be a longer
-paragraph if you need more than one line to explain the idea — line
-breaks within a paragraph are just joined together.
-
 Improve the Redgate rota app (rota.red-gate.com)! It's used for 30+ rotas across Redgate. Have a go at making it better! If you come up with something good, make a PR and we'll review it. Here's how to start [Redgate rota app ideas (Word doc)](files/redgate-rota-ideas.docx)
+
+Audit the Screens: two screens that are meant to share one design system have
+quietly drifted apart on colors, spacing, and radii. Get Claude Code to find
+the real drift and tell it apart from intentional differences.
+[Guidelines](files/audit-the-screens/audit-the-screens.docx)
+[dashboard.html](files/audit-the-screens/dashboard.html)
+[settings.html](files/audit-the-screens/settings.html)
+
+Mine the Backlog: pull 1,500+ items from a GitHub Projects board and get
+Claude Code to surface the recurring patterns worth fixing before the next
+planning session.
+[Guidelines](files/mine-the-backlog/mine-the-backlog.docx)
+
+Spin Up a Throwaway POC: build a self-contained, no-build-step HTML demo that
+proves an API integration actually works: good enough to open cold on any
+laptop five minutes before a call.
+[Guidelines](files/spin-up-a-throwaway-poc/spin-up-a-throwaway-poc.docx)
+
+Unscramble the Excel: a CRM export looks fine until you try to open it;
+diagnose why it won't render as a table, then produce a clean version.
+[Guidelines](files/unscramble-the-excel/unscramble-the-excel.docx)
+[orders_export.csv](files/unscramble-the-excel/orders_export.csv)

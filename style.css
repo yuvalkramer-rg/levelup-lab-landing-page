@@ -5,7 +5,7 @@ body {
   padding: 0 1rem;
   line-height: 1.5;
   color: #1a1a1a;
-  background: #fafafa;
+  background: #f2f7fb;
 }
 
 header {
@@ -28,7 +28,8 @@ header p {
 #ideas li {
   padding: 1rem 1.25rem;
   margin-bottom: 0.75rem;
-  background: #fff;
+  background: #eaf3fa;
+  border: 1px solid #a9c6de;
   border-left: 4px solid #b3282d;
   border-radius: 0.375rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -44,4 +45,54 @@ header p {
 
 #ideas a:hover {
   color: #7a1c1f;
+}
+
+.idea-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.idea-toggle {
+  flex: none;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #b3282d;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.idea-toggle:hover {
+  color: #7a1c1f;
+}
+
+.idea-toggle-arrow {
+  display: inline-block;
+  transition: transform 0.15s ease;
+}
+
+.idea-toggle[aria-expanded="true"] .idea-toggle-arrow {
+  transform: rotate(90deg);
+}
+
+.idea-files {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+
+.idea-files li {
+  padding: 0.15rem 0;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.idea-files a {
+  margin-left: 0;
 }
