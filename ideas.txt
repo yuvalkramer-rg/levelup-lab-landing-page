@@ -1,4 +1,4 @@
-Improve the Redgate rota app (rota.red-gate.com)! It's used for 30+ rotas across Redgate. Have a go at making it better! If you come up with something good, make a PR and we'll review it. Here's how to start [Redgate rota app ideas (Word doc)](files/redgate-rota-ideas.docx)
+Improve the Redgate rota app (rota.red-gate.com)! It's used for 30+ rotas across Redgate. Have a go at making it better! If you come up with something good, make a PR and we'll review it. [Redgate rota app ideas (Word doc)](files/redgate-rota-ideas.docx)
 
 Audit the Screens: two screens that are meant to share one design system have
 quietly drifted apart on colors, spacing, and radii. Get Claude Code to find
